@@ -67,7 +67,7 @@
 # Variable Init phase
 export VM_DISK_DIR=$HOME/vm_disks
 export VDI="$VM_DISK_DIR/Ubuntu 18.10 Cosmic (64bit)2.vdi"
-export VMNAME=k_grok_vcabalov
+export VMNAME=k_grok_group5
 # determine your host's primary network adapter ...
 # this may work on Linux
 export HOST_ADAPTER=$(ip link show up | grep "<BROAD" | cut -f2 -d":")
@@ -78,7 +78,7 @@ export HOST_ADAPTER=$(ifconfig | grep -B4 "status: active" | grep -B3 "inet " | 
 # On your host:
 vboxmanage hostonlyif create
 # Assuming vboxnet1 was created
-vboxmanage dhcpserver add --ifname vboxnet1 --ip 192.168.56.2 --netmask 255.255.255.0 --lowerip 192.168.56.3 --upperip 192.168.56.254 --enable
+vboxmanage dhcpserver add --ifname vboxnet1 --ip 192.168.57.2 --netmask 255.255.255.0 --lowerip 192.168.57.3 --upperip 192.168.57.254 --enable
 
 # For more info about these instructions, see:
 # https://www.virtualbox.org/manual/ch08.html
