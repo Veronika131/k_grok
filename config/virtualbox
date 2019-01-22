@@ -66,8 +66,8 @@
 
 # Variable Init phase
 export VM_DISK_DIR=$HOME/vm_disks
-export VDI="$VM_DISK_DIR/Ubuntu 16.10 Yakkety (64bit).vdi"
-export VMNAME=k_grok
+export VDI="$VM_DISK_DIR/Ubuntu 18.10 Cosmic (64bit)2.vdi"
+export VMNAME=k_grok_vcabalov
 # determine your host's primary network adapter ...
 # this may work on Linux
 export HOST_ADAPTER=$(ip link show up | grep "<BROAD" | cut -f2 -d":")
